@@ -1,0 +1,85 @@
+/* Background styling */
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('./images/background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* BMI Calculator Container */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Title */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Input Fields */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Remove Number Input Spinner Arrows */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Calculate Button */
+button {
+    background: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition:  0.3s ease-in-out;
+}
+
+button:hover {
+    background: #e68a00;
+}
+
+/* BMI Result Display */
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+.bmi-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover; /* Ensures the image fills the space */
+}
